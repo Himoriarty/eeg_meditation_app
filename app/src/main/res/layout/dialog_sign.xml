@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/background_dark"
+    android:padding="2dp"
+    >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/alltime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@android:color/background_dark"
+                android:textColor="#2fbbef"
+                android:textSize="15sp"
+                android:text="00"
+                />
+
+
+        </RelativeLayout>
+
+        <GridView
+            android:id="@+id/gv_sign_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#dbdbdb"
+            android:clickable="true"
+            android:focusable="true"
+            android:clipChildren="false"
+            android:columnWidth="30dp"
+            android:listSelector="@null"
+            android:numColumns="7"
+
+            android:paddingBottom="1dp"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="1dp"
+            >
+
+        </GridView>
+
+</LinearLayout>

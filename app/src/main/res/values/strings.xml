@@ -1,0 +1,14 @@
+<resources>
+    <string name="head_set">戴上头环</string>
+    <string name="app_name">Zen</string>
+    <string name="sqTitle">头环连接质量:</string>
+    <string name="save_button">保存</string>
+    <string name="train_report_title">训练报告</string>
+    <string name="train_user">训练人：</string>
+    <string name="train_timelength">训练时长：</string>
+    <string name="sub_title1">我刚刚做的是哪种冥想？</string>
+    <string name="sub_title2">有什么想和大家分享的吗？</string>
+    <string name="end_train">结束本次训练</string>
+    <string name="getuserinfo">getuserinfo</string>
+
+</resources>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        android:gravity="center"
+        android:text="@string/train_report_title"
+        android:textSize="30sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="@dimen/layout_marginSides">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/train_user"/>
+        <TextView
+            android:id="@+id/train_userId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="leyi"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_marginTop"
+        android:layout_marginEnd="@dimen/layout_marginSides"
+        android:layout_marginStart="@dimen/layout_marginSides">
+
+        <TextView
+            android:id="@+id/train_date"
+            android:layout_alignParentStart="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2018.01.14"/>
+
+        <TextView
+            android:id="@+id/train_timelength"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="00 分钟"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/train_timelength"
+            android:layout_toLeftOf="@+id/train_timelength"/>
+
+
+    </RelativeLayout>
+
+    <!--折线图-->
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/line_chart"
+        android:layout_width="match_parent"
+        android:layout_height="500px"
+
+        android:visibility="visible" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/layout_marginSides"
+        android:layout_marginTop="@dimen/layout_marginTop"
+        android:text="@string/sub_title1"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginStart="@dimen/layout_marginSides"
+        android:layout_marginEnd="@dimen/layout_marginSides"
+        android:layout_marginTop="@dimen/layout_marginTop"
+        android:layout_height="wrap_content">
+        
+        <RadioGroup
+            android:id="@+id/rgStorageWay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/focus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="专注" />
+
+            <RadioButton
+                android:id="@+id/zhengnian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="正念" />
+                <!--android:drawableLeft="@drawable/selector_login_mode_radiobutton"-->
+
+
+            <RadioButton
+                android:id="@+id/zuowang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="坐忘" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/layout_marginSides"
+        android:layout_marginTop="@dimen/layout_marginTop"
+        android:text="@string/sub_title2"/>
+    <EditText
+        android:id="@+id/share_words_view"
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:layout_marginTop="@dimen/layout_marginTop"
+        android:layout_marginStart="@dimen/layout_marginSides"
+        android:layout_marginEnd="@dimen/layout_marginSides"/>
+    <Button
+        android:id="@+id/end_train"
+        android:layout_marginTop="@dimen/layout_marginTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="@dimen/buttonsize"
+        android:text="@string/end_train"/>
+
+
+</LinearLayout>
